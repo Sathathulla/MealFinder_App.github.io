@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">Meal Recipe Finder</h1>
+        <button id="favorites-button" class="favorite-view-button">View Favorites</button>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Enter dish name">
+        <button id="search-button" class="search-button">Search</button>
+        <button id="random-button" class="random-button">Random Meal</button>
+    </div>
+    <div class="recipe-container" id="recipe-container"></div>
+    <div class="favorites-container" id="favorites-container" style="display: none;">
+        <h2>Your Favorite Recipes</h2>
+        <div id="favorites-list"></div>
+    </div>
+    <div class="error-message" id="error-message"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
